@@ -44,7 +44,7 @@ var penalty = 10;
 
 //This fuctions starts the timer and the quiz
 startTimer.addEventListener("click", function() {
-	if (timer === 0) {
+	if (timer >= 0) {
 		timer = setInterval(function() {
 			timerCount--;
 			currentTime.textContent = "Time Remaining: " + timerCount;

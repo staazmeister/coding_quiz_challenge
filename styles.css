@@ -1,114 +1,119 @@
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, p {
-  text-align: center;
+h1,
+p {
+	text-align: center;
 }
-
 
 button {
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 textarea {
-  width: 90%;
-  margin: 20px;
+	width: 90%;
+	margin: 20px;
 }
 
 label {
-  margin-right: 10px;
+	margin-right: 10px;
 }
+
 input {
-  margin-bottom: 20px;
-  width: 50%;
-  border: 1px solid gray;
+	margin-bottom: 20px;
+	width: 50%;
+	border: 1px solid gray;
 }
 
 li {
-  background-color: rgba(137, 43, 226, 0.39);
-  margin-top: 10px;
-  padding: 5px 15px;
-  width: 60%;
-  border-radius: 10px;
-  font-size: 16px;
-  color: white;
+	background-color: rgba(137, 43, 226, 0.822);
+	margin-top: 10px;
+	padding: 5px 15px;
+	width: 60%;
+	border-radius: 10px;
+	font-size: 16px;
+	color: white;
 }
 
 #title-section {
-  position: absolute;
-  left: 30%;
-  top: 20%;
-  width: 450px;
-  height: 450px;
-  border: 1px solid rgba(137, 43, 226, 0.39);
+	position: absolute;
+	left: 30%;
+	top: 20%;
+	width: 450px;
+	height: 450px;
+	border: 1px solid blueviolet;
 }
+
 #startTime {
-  background-color: rgba(137, 43, 226, 0.39);
-  margin-left: 33%;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
+	background-color: rgba(137, 43, 226, 0.39);
+	margin-left: 33%;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
 }
+
 #questionsDiv {
-  margin: 20px;
+	margin: 20px;
 }
 
 #highscoreDiv {
-  margin: 20px;
+	margin: 20px;
 }
+
 #highscoreDiv ol {
-  list-style-type: number;
+	list-style-type: number;
 }
 
 #highscoreDiv li {
-  background-color: rgba(128, 128, 128, 0.308);
-  color: black;
-  width: 80%;
+	background-color: rgba(128, 128, 128, 0.308);
+	color: black;
+	width: 80%;
 }
 
 #highscoreDiv li:nth-child(odd) {
-  background-color: rgba(137, 43, 226, 0.226);;
-  width: 80%;
+	background-color: rgba(137, 43, 226, 0.226);
+	;
+	width: 80%;
 }
 
 #createDiv {
-  margin-top: 20px;
-  border-top: 1px solid lightgray;
+	margin-top: 20px;
+	border-top: 1px solid lightgray;
 }
 
 #currentTime {
-  float: right;
+	float: right;
 }
 
 #Submit {
-  background-color: rgba(137, 43, 226, 0.39);
-  margin-left: 33%;
-  padding: 10px 20px;
-  font-size: 15px;
-  color: white;
+	background-color: rgba(137, 43, 226, 0.39);
+	margin-left: 33%;
+	padding: 10px 20px;
+	font-size: 15px;
+	color: white;
 }
 
 #goBack {
-  background-color: rgba(137, 43, 226, 0.39);
-  position: relative;
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  top: 30%;
-  left: 55%;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
+	background-color: rgba(137, 43, 226, 0.39);
+	position: relative;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	top: 30%;
+	left: 55%;
+	width: auto;
+	text-align: center;
+	text-decoration: none;
 }
 
 #clear {
-  background-color: rgba(137, 43, 226, 0.39);
-  position: relative;
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  top: 30%;
-  right: 5%;  
-  text-align: center;
+	background-color: rgba(137, 43, 226, 0.39);
+	position: relative;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	top: 30%;
+	right: 5%;
+	text-align: center;
 }

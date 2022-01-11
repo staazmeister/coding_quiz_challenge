@@ -7,13 +7,13 @@ clear.addEventListener("click", function() {
     location.reload();
 });
 
-var allScores = localStorage.getItem("allScores");
-allScores = JSON.parse(allScores);
+var rankings = localStorage.getItem("rankings");
+rankings = JSON.parse(rankings);
 
-if (allScores !== null) {
-    for (var i = 0; i < allScores.length; i++) {
+if (rankings !== null) {
+    for (var i = 0; i < rankings.length; i++) {
         var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+        createLi.textContent = rankings[i].initials + " " + rankings[i].score;
         highScore.appendChild(createLi);
     }
 }

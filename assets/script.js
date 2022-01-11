@@ -59,7 +59,7 @@ startTimer.addEventListener("click", function() {
 	render(questionList);
 });
 
-//This functions allows the list of questions to render as soon as the start button is clicked
+//This function allows the list of questions and choices to render as soon as the start button is clicked
 function render(questionList) {
 	questionsDiv.innerHTML = "";
 	ulCreate.innerHTML = "";
@@ -104,7 +104,7 @@ function compare(event) {
 	questionsDiv.appendChild(createDiv);
 }
 
-//This functions alerts the user that the quiz is over
+//This function alerts the user that the quiz is over
 function quizComplete() {
 	questionsDiv.innerHTML = "";
 	currentTime.innerHTML = "";
@@ -115,7 +115,7 @@ function quizComplete() {
 
 	questionsDiv.appendChild(createH1);
 
-	// This feautres stops time and tallys up the users score 
+	// This feautre stops the timer and tallies up the user's score 
 	if (timerCount >= 0) {
 		var timeRemaining = timerCount;
 		var createP = document.createElement("p");
@@ -145,7 +145,7 @@ function quizComplete() {
 
 	questionsDiv.appendChild(createSubmit);
 
-	// This is how the users information is stored using local storage
+	// This is how the user's information is stored using local storage
 	createSubmit.addEventListener("click", function() {
 		var initials = createInput.value;
 
@@ -158,18 +158,18 @@ function quizComplete() {
 				score: timeRemaining,
 			};
 			console.log(finalScore);
-			var allScores = localStorage.getItem("allScores");
-			if (allScores === null) {
-				allScores = [];
+			var rankings = localStorage.getItem("rankings");
+			if (rankings === null) {
+				rankings = [];
 			} else {
-				allScores = JSON.parse(allScores);
+				rankings = JSON.parse(rankings);
 			}
-			allScores.push(finalScore);
-			allScores.sort((a, b) => {
+			rankings.push(finalScore);
+			rankings.sort((a, b) => {
 				return b.score - a.score
 			});
-			var newScore = JSON.stringify(allScores);
-			localStorage.setItem("allScores", newScore);
+			var newScore = JSON.stringify(rankings);
+			localStorage.setItem("rankings", newScore);
 			window.location.replace("scoreboard.html");
 		}
 	});

@@ -47,6 +47,6 @@ Skills to be implemented on this project are:
 
 
 ## Links to Deployed Application
-Live URL: https://staazmeister.github.io/password_generator/
+Live URL: https://staazmeister.github.io/coding_quiz_challenge/
 
-URL for GitHub repository: https://github.com/staazmeister/password_generator.git
+URL for GitHub repository: https://github.com/staazmeister/coding_quiz_challenge.git

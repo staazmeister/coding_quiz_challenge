@@ -42,7 +42,8 @@ Skills to be implemented on this project are:
 
 ## View of how deployed application looks
 
-![Screen Shot 2022-01-03 at 5 31 56 PM](https://user-images.githubusercontent.com/94095220/147997990-e27c0e93-beb4-4b3e-a071-dc25c89d9c7b.png)
+
+![Screen Shot 2022-01-10 at 8 33 10 PM](https://user-images.githubusercontent.com/94095220/148882125-64f2adef-ace6-4dea-b979-fcab7f7b89be.png)
 
 
 

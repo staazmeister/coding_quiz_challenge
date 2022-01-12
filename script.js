@@ -1,6 +1,6 @@
 var currentTime = document.querySelector("#currentTime");
 var startTimer = document.querySelector("#startTime");
-var questionsDiv = document.querySelector("#questionsDiv");
+var questionsQuiz = document.querySelector("#questionsQuiz");
 var wrapper = document.querySelector("#wrapper");
 var ulCreate = document.createElement("ul");
 
@@ -61,17 +61,17 @@ startTimer.addEventListener("click", function() {
 
 //This function allows the list of questions and choices to render as soon as the start button is clicked
 function render(questionList) {
-	questionsDiv.innerHTML = "";
+	questionsQuiz.innerHTML = "";
 	ulCreate.innerHTML = "";
 	for (var i = 0; i < questions.length; i++) {
 		var userQuestion = questions[questionList].question;
 		var userChoices = questions[questionList].choices;
-		questionsDiv.textContent = userQuestion;
+		questionsQuiz.textContent = userQuestion;
 	}
 	userChoices.forEach(function(newItem) {
 		var listItem = document.createElement("li");
 		listItem.textContent = newItem;
-		questionsDiv.appendChild(ulCreate);
+		questionsQuiz.appendChild(ulCreate);
 		ulCreate.appendChild(listItem);
 		listItem.addEventListener("click", compare);
 	});
@@ -101,19 +101,19 @@ function compare(event) {
 	} else {
 		render(questionList);
 	}
-	questionsDiv.appendChild(createDiv);
+	questionsQuiz.appendChild(createDiv);
 }
 
 //This function alerts the user that the quiz is over
 function quizComplete() {
-	questionsDiv.innerHTML = "";
+	questionsQuiz.innerHTML = "";
 	currentTime.innerHTML = "";
 
 	var createH1 = document.createElement("h1");
 	createH1.setAttribute("id", "createH1");
 	createH1.textContent = "You're Done!";
 
-	questionsDiv.appendChild(createH1);
+	questionsQuiz.appendChild(createH1);
 
 	// This feautre stops the timer and tallies up the user's score 
 	if (timerCount >= 0) {
@@ -122,28 +122,28 @@ function quizComplete() {
 		clearInterval(timer);
 		createP.textContent = "Your final score is: " + timeRemaining;
 
-		questionsDiv.appendChild(createP);
+		questionsQuiz.appendChild(createP);
 	}
 	//This features allows the user to enter their initials for the scoreboard
 	var createLabel = document.createElement("label");
 	createLabel.setAttribute("id", "createLabel");
 	createLabel.textContent = "Enter your initials: ";
 
-	questionsDiv.appendChild(createLabel);
+	questionsQuiz.appendChild(createLabel);
 
 	var createInput = document.createElement("input");
 	createInput.setAttribute("type", "text");
 	createInput.setAttribute("id", "initials");
 	createInput.textContent = "";
 
-	questionsDiv.appendChild(createInput);
+	questionsQuiz.appendChild(createInput);
 
 	var createSubmit = document.createElement("button");
 	createSubmit.setAttribute("type", "submit");
 	createSubmit.setAttribute("id", "Submit");
 	createSubmit.textContent = "Submit";
 
-	questionsDiv.appendChild(createSubmit);
+	questionsQuiz.appendChild(createSubmit);
 
 	// This is how the user's information is stored using local storage
 	createSubmit.addEventListener("click", function() {

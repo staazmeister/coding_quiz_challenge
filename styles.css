@@ -42,7 +42,6 @@ li {
 	top: 20%;
 	width: 450px;
 	height: 450px;
-	border: 1px solid blueviolet;
 }
 
 #startTime {
@@ -53,25 +52,25 @@ li {
 	color: white;
 }
 
-#questionsDiv {
+#questionsQuiz {
 	margin: 20px;
 }
 
-#highscoreDiv {
+#scoreboardRanking {
 	margin: 20px;
 }
 
-#highscoreDiv ol {
+#scoreboardRanking ol {
 	list-style-type: number;
 }
 
-#highscoreDiv li {
+#scoreboardRanking li {
 	background-color: rgba(128, 128, 128, 0.308);
 	color: black;
 	width: 80%;
 }
 
-#highscoreDiv li:nth-child(odd) {
+#scoreboardRanking li:nth-child(odd) {
 	background-color: rgba(137, 43, 226, 0.226);
 	;
 	width: 80%;

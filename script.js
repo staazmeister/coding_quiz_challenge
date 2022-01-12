@@ -148,7 +148,7 @@ function quizComplete() {
 		var initials = createInput.value;
 
 		if (!initials) {
-			alert("Enter your intials!");
+			alert("Enter your initials!");
 			return;
 		} else {
 			var finalScore = {

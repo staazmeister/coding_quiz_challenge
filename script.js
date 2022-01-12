@@ -35,12 +35,11 @@ var questions = [{
 	},
 ];
 
-var score = 0;
 var questionList = 0;
 var timerCount = 76;
 var timer = 0;
 var penalty = 10;
-
+var score = 0;
 
 //This fuctions starts the timer and the quiz
 startTimer.addEventListener("click", function() {
@@ -96,8 +95,7 @@ function compare(event) {
 
 	if (questionList >= questions.length) {
 		quizComplete();
-		createDiv.textContent = "Quiz completed!" + " " + "You answered " + score + "/" + questions.length + " correct!";
-
+	
 	} else {
 		render(questionList);
 	}
